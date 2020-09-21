@@ -1,0 +1,20 @@
+{
+  "name": "cryptonix-x-opensource",
+  "version": "1.0.0",
+  "description": "Open Source version of Cryptonix X",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "dependencies": {
+    "discord.js": "^11.6.3",
+    "moment": "^2.27.0",
+    "os": "^0.1.1",
+    "os-utils": "^0.0.14",
+    "parse-ms": "^2.0.0",
+    "quick.db": "7.0.0b21",
+    "superagent": "^5.2.2",
+    "discord.js-commando": "^0.10.0"
+  }
+}
