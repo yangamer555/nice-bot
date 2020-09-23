@@ -24,7 +24,7 @@ exports.run = async (client, message) => {
           totcmds = files.length;
   let prefix = await db.fetch(`prefix_${message.guild.id}`);
     if (!prefix) {
-      prefix = 'm!'
+      prefix = '$'
     }
   osutils.cpuUsage(function(v) {
     const embed = new Discord.RichEmbed()
