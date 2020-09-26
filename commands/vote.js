@@ -11,7 +11,7 @@ exports.run = async (bot, message, args) => {
   // Number.isInteger(itime)
   //  if (e) return message.reply('please supply a valid time number in seconds')
   
-  let msg = await message.channel.send(`Опрос: ${message.content.split(" ").splice(2).join(" ")} \nГолосуйте сейчас!`);
+  let msg = await message.channel.send(`Опрос: ${message.content.split(" ").splice(1).join(" ")} \nГолосуйте сейчас!`);
   await msg.react(agree);
   await msg.react(disagree);
 
