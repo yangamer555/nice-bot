@@ -6,7 +6,7 @@ const agree    = "✅";
 const disagree = "❎";
 
 exports.run = async (bot, message, args) => {
-  if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("❌**Error:** Вы не имеет право: **Administator** ");
+  if(!message.member.hasPermission("MANAGE_ROLE")) return message.reply("❌**Error:** Вы не имеет право: **Administator** ");
   if(!args || args[0] === 'help') return message.reply("Использование: vote <question>")
   // Number.isInteger(itime)
   //  if (e) return message.reply('please supply a valid time number in seconds')
