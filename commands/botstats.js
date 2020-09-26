@@ -33,6 +33,7 @@ exports.run = async (client, message) => {
     .addField("Botstats", "Показывает статистику о боте.")
     .addField("--------------------------------------------------------------------------------","------------------------------------------------------------------------------")
     .addField("Префикс:", prefix, true)
+    .addField("Серверов:", `${client.guilds.size}`, true)
     .addField("Всего каналов:", `${client.channels.size}`, true)
     .addField("Всего юзеров:", `${client.users.size}`, true)
     .addField("Всего команд:", `${totcmds} команд`, true)
