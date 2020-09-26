@@ -26,7 +26,6 @@ exports.run = async (client, message) => {
     if (!prefix) {
       prefix = '$'
     }
-          const guilds = client.guilds.size
   osutils.cpuUsage(function(v) {
     const embed = new Discord.RichEmbed()
     .setColor(0x7289DA)
@@ -34,7 +33,6 @@ exports.run = async (client, message) => {
     .addField("Botstats", "Показывает статистику о боте.")
     .addField("--------------------------------------------------------------------------------","------------------------------------------------------------------------------")
     .addField("Префикс:", prefix, true)
-    .addField("Серверов:", guilds, true)
     .addField("Всего каналов:", `${client.channels.size}`, true)
     .addField("Всего юзеров:", `${client.users.size}`, true)
     .addField("Всего команд:", `${totcmds} команд`, true)
